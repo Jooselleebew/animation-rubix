@@ -1,0 +1,47 @@
+body{
+    margin:0; padding:0; background: #223;
+}
+p{ 
+    color: lightgreen; font-family: Cursive, Georgia, New Times Rowman; font-size:20px;
+}
+
+.container{
+    width:250px; position: absolute; top:45%; left:40%; perspective:800px;
+transform: translate(-50%, -50%);
+}
+
+.title{
+     color:#ff3; font-family: Arial; font-size:25px; text-align: right; line-height:60px;  display: inline-block; margin-left:20px; text-shadow:1px 0px 0px #ff3000;
+ }
+
+.wrapper-as{
+   width: 100px; animation: animasiAs 7s ease-in-out infinite;
+ transform-style: preserve-3d;  float: right;
+}
+
+.title strong{color:#fafafa; font-size:30px; font-family: Georgia; margin:5px;;}
+
+.as1{
+ position: absolute; float: right; width:100px; height:100px; line-height:100px; text-align: center; background: salmon; color:#fafafa; font-family: New Times Rowman; transform: translateZ(50px);
+}
+
+.as2{
+    position: absolute; float: right; width:100px; height:100px; line-height:100px; text-align: center; background: #049; color:#fff; font-family: georgia; transform: rotateY(-90deg) translateX(-50px); transform-origin:left;
+}
+
+.as3{
+     position: absolute; float: right; width:100px; height:100px; line-height:100px; text-align: center; background: cornflowerblue; color:#fff; font-family: georgia;  transform: rotateY(90deg) translateZ(50px);
+}
+
+.as4{
+     position: absolute; float: right; width:100px; height:100px; line-height:100px; text-align: center; background: #ff1500; color:#fff; font-family: georgia;  transform: rotateY(180deg) translateZ(50px); 
+}
+
+
+@-webkit-keyframes animasiAs {
+   0%{transform: rotateY(0);}
+   25%{transform: rotateY(90deg);}
+   50%{transform: rotateY(180deg);}
+    75%{transform: rotateY(270deg);}
+    100%{transform: rotateY(360deg);}
+ }
